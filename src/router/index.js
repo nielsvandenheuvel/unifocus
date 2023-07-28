@@ -11,19 +11,19 @@ const routes = [
     path: "/courses",
     name: "courses",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/courses/index.vue"),
+      import(/* webpackChunkName: "courses" */ "../views/courses/index.vue"),
   },
   {
     path: "/calendar",
     name: "calendar",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/calendar/index.vue"),
+      import(/* webpackChunkName: "calendar" */ "../views/calendar/index.vue"),
   },
   {
     path: "/tasks",
     name: "tasks",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/tasks/index.vue"),
+      import(/* webpackChunkName: "tasks" */ "../views/tasks/index.vue"),
   },
 ];
 

@@ -1,5 +1,5 @@
 <template>
-    <router-link :to="to" class="link" :class="{ active: isActive }">
+    <router-link :to="to" class="link" :class="{ 'active': route.path == to }">
         <i class="icon" :class="icon"/>
         <transition name="fade">
             <span v-if="!collapsed">
@@ -10,7 +10,6 @@
 </template>
 
 <script>
-    import { computed } from 'vue';
     import { useRoute } from 'vue-router';
     import { collapsed } from './state';
 
@@ -21,8 +20,7 @@
         },
         setup(props) {
             const route = useRoute()
-            const isActive = computed(() => route.path === props.to)
-            return { isActive, collapsed }
+            return { collapsed, route }
         }
     }
 </script>
@@ -45,7 +43,7 @@
     font-weight: 400;
     user-select: none;
 
-    margin: 0.1em 0;
+    margin: 0.3em 0.25em 0 0.25em;
     padding: 0.4em;
     border-radius: 0.25em;
     height: 2em;
@@ -56,7 +54,7 @@
 .link:hover {
     background-color: var(--primary-dark-color);
 }
-.link:active {
+.link.active {
     background-color: var(--secondary-color);
 }
 .link .icon {

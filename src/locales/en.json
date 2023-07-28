@@ -1,0 +1,8 @@
+{
+    "sidebar": {
+        "dashboard": "Dashboard",
+        "courses": "Courses",
+        "tasks": "Tasks",
+        "calendar": "Calendar"
+    }
+}

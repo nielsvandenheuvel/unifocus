@@ -1,7 +1,10 @@
 <template>
     <div class="sidebar" :style="{ width: sideBarWidth }">
-        <img class="logo" v-if="collapsed" src="@/assets/logo_white.png" alt="ti-logo">
-        <img class="logo-text" v-else src="@/assets/logo_text_white.png" alt="ti-logo">
+        <div class="logo">
+            <img v-if="collapsed" src="@/assets/logo_white.png" alt="ti-logo">
+            <img v-else src="@/assets/logo_text_white.png" alt="ti-logo">
+        </div>
+        <hr>
 
         <SideBarItem to="/" icon="fas fa-gauge">Dashboard</SideBarItem>
         <SideBarItem to="/courses" icon="fas fa-book">Courses</SideBarItem>
@@ -62,10 +65,18 @@
 }
 .logo {
     height: 50px;
-    width: auto;
+    align-items: center;
 }
-.logo-text {
-    
+img {
+    display: block;
+    height: 100%;
+
+    position: relative;
+    top: 50%;
+    transform: translate(0, -40%);
+}
+hr {
+    color: white;
 }
 
 </style>

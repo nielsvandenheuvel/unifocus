@@ -1,6 +1,7 @@
 <template>
   <SideBar />
-  <div :style="{ 'margin-left': sideBarWidth }">
+  <div class="body" :style="{ 'margin-left': sideBarWidth }">
+    <BreadCrumb />
     <router-view />
   </div>
 
@@ -8,10 +9,11 @@
 
 <script>
   import SideBar from '@/components/sidebar/SideBar.vue';
-  import sideBarWidth from '@/components/sidebar/state.js';
+  import { sideBarWidth } from '@/components/sidebar/state';
+  import BreadCrumb from '@/components/BreadCrumb.vue';
 
   export default {
-    components: { SideBar },
+    components: { SideBar, BreadCrumb },
     setup() {
       return { sideBarWidth };
     },
@@ -37,6 +39,13 @@
     --secondary-color: #d6ad60;
 }
 
+.body {
+  transition: 0.3s ease;
+  margin: 0 0.5em 0 0.5em;
+
+  background-color: #f3f5fa;
+}
+
 nav {
   padding: 30px;
 }
@@ -49,4 +58,8 @@ nav a {
 nav a.router-link-exact-active {
   color: #42b983;
 }
+router-view {
+  background-color: #f3f5fa;
+}
 </style>
+
