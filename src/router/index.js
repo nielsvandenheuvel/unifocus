@@ -3,7 +3,7 @@ import Dashboard from "../views/dashboard/index.vue";
 
 const routes = [
   {
-    path: "/",
+    path: "/dashboard",
     name: "dashboard",
     component: Dashboard,
   },
@@ -14,16 +14,16 @@ const routes = [
       import(/* webpackChunkName: "courses" */ "../views/courses/index.vue"),
   },
   {
-    path: "/calendar",
-    name: "calendar",
+    path: "/courses/:id",
     component: () =>
-      import(/* webpackChunkName: "calendar" */ "../views/calendar/index.vue"),
+      import(/* webpackChunkName: "course" */ "../views/courses/courseDetails.vue"),
+    props: true,
   },
   {
-    path: "/tasks",
-    name: "tasks",
+    path: "/planning",
+    name: "planning",
     component: () =>
-      import(/* webpackChunkName: "tasks" */ "../views/tasks/index.vue"),
+      import(/* webpackChunkName: "calendar" */ "../views/planning/index.vue"),
   },
 ];
 

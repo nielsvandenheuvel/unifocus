@@ -1,14 +1,15 @@
 [
     {
         "id": 1,
-        "title": "Microeconomics I",
-        "subtitle": "Individual Decision Making",
+        "name": "Microeconomics I (Individual Decision Making)",
         "teachers": [
             "Vladimir Karamychev",
             "Matthijs van Veelen"
         ],
         "field": "-",
+        "year": 1,
         "period": 1,
+        "dates": "Sep 04, 2023 to Oct 27, 2023",
         "type": "core",
         "credits": 5,
         "description": "The course is the fundamental microeconomics course which studies individual decision-making and its relations to market clearing price formation. It builds on classical consumer choice theory. Then, individual behaviors are further integrated into a closed and interrelated system in which the equilibrium values of all variables are simultaneously determined. This is in contrast to the partial equilibrium approach, where all variables, which are not directly related to the problem at hand, are taking to be given. The course develops a theory that attempts to predict the complete vector of individual final consumptions and individual productions from the fundamentals of the economy.",
@@ -24,13 +25,14 @@
     },
     {
         "id": 2,
-        "title": "Microeconomics II",
-        "subtitle": "Game Theory",
+        "name": "Microeconomics II (Game Theory)",
         "teachers": [
             "José Luis Moraga-González"
         ],
         "field": "-",
+        "year": 1,
         "period": 2,
+        "dates": "Oct 30, 2023 to Dec 22, 2023",
         "type": "core",
         "credits": 4,
         "description": "This course provides a framework for the analysis of situations of conflict. Emphasis is put on the modelling of situations of strategic interaction. Through the lens of the distinct notions of equilibria, the course offers ways to restrict the set of possible outcomes in games. The course discusses many well-known examples of strategic interaction.\nSince the 1970s, questions about material supply and demand have become less central in economics, and questions about human interactions and information have become more central. Game theory provides the basic tools for investigating the societal inefficiencies due to selfish strategic behavior of individuals, and ways to minimize those inefficiencies. In its first years, game theory was purely theoretical, so as to develop its basic concepts. It was later extended to experimental economics, and nowadays its tools are used in virtually every economics discipline.",

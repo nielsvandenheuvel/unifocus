@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Course",
+        "color": "#B2A4FF",
+        "icon": "fas fa-book"
+    },
+    {
+        "id": 2,
+        "name": "Programming",
+        "color": "#FFB4B4",
+        "icon": "fas fa-code"
+    },
+    {
+        "id": 3,
+        "name": "Commuting",
+        "color": "#808080",
+        "icon": "fas fa-car"
+    }
+]

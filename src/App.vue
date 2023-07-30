@@ -1,8 +1,9 @@
 <template>
-  <SideBar />
-  <div class="body" :style="{ 'margin-left': sideBarWidth }">
-    <BreadCrumb />
-    <router-view />
+  <div id="app">
+    <SideBar />
+    <div class="body" :style="{ 'margin-left': sideBarWidth }">
+      <router-view />
+    </div>
   </div>
 
 </template>
@@ -10,10 +11,9 @@
 <script>
   import SideBar from '@/components/sidebar/SideBar.vue';
   import { sideBarWidth } from '@/components/sidebar/state';
-  import BreadCrumb from '@/components/BreadCrumb.vue';
 
   export default {
-    components: { SideBar, BreadCrumb },
+    components: { SideBar },
     setup() {
       return { sideBarWidth };
     },
@@ -21,45 +21,40 @@
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Catamaran');
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Catamaran', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
 }
 
 :root {
-    --bg-color: white;
+    --bg-color: #f3f5fa;
 
     --primary-color: #2e3b7e;
     --primary-light-color: #5a6ed1;
-    --primary-dark-color: #1b286b;
+    --primary-dark-color: #131c4b;
 
     --secondary-color: #d6ad60;
-}
 
+    --subtitle-font: 'Century Schoolbook W01', 'Times New Roman', times, serif;
+}
 .body {
   transition: 0.3s ease;
-  margin: 0 0.5em 0 0.5em;
 
-  background-color: #f3f5fa;
-}
+  padding: 2em;
 
-nav {
-  padding: 30px;
-}
+  float: top;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  display: flex;
+  flex-direction: column;
 
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-router-view {
-  background-color: #f3f5fa;
+  background-color: var(--bg-color);
 }
 </style>
 

@@ -1,0 +1,45 @@
+[
+    {
+        "id": 1,
+        "category_id": 2,
+        "status_id": 1,
+        "course_id": null,
+        "name": "Code taskbar",
+        "description": "I need to make the tasks drag and droppable and make sure it is a scrollable list.",
+        "due": "2023-09-2",
+        "est_hours": 12,
+        "used_hours": 3
+    },
+    {
+        "id": 2,
+        "category_id": 1,
+        "status_id": 2,
+        "course_id": 1,
+        "name": "Read first chapter",
+        "description": "",
+        "due": "2023-08-31",
+        "est_hours": 12,
+        "used_hours": 5
+    },
+    {
+        "id": 3,
+        "category_id": 2,
+        "status_id": 1,
+        "course_id": null,
+        "name": "Filter for taskbar",
+        "description": "",
+        "due": "2023-08-31",
+        "est_hours": 0,
+        "used_hours": 0
+    },
+    {
+        "id": 4,
+        "category_id": 2,
+        "status_id": 1,
+        "course_id": null,
+        "name": "Convert calendar view to component",
+        "due": "2023-30-07",
+        "est_hours": 2,
+        "used_hours": 0
+       }
+]

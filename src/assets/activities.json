@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "task_id": 1,
+        "category_id": 2,
+        "course_id": null,
+        "name": "Coding tasks",
+        "description": "This task is almost complete. I only need to add drag and drop.",
+        "begin": "2023-07-29T09:00:00",
+        "end": "2023-07-29T11:00:00"
+    },
+    {
+        "id": 2,
+        "task_id": 1,
+        "category_id": 2,
+        "course_id": 1,
+        "name": "Reading first chapter",
+        "description": "",
+        "begin": "2023-07-30T20:00:00",
+        "end": "2023-07-30T24:00:00"
+    },
+    {
+        "id": 3,
+        "task_id": null,
+        "category_id": 3,
+        "course_id": null,
+        "name": "Travel to UvA",
+        "description": "I travel to the university by first taking the bus, then taking the regular train, and finally the intercity direct",
+        "begin": "2023-07-29T11:00:00",
+        "end": "2023-07-29T12:00:00"
+    }
+]

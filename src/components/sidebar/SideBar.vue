@@ -6,10 +6,9 @@
         </div>
         <hr>
 
-        <SideBarItem to="/" icon="fas fa-gauge">Dashboard</SideBarItem>
+        <SideBarItem to="/dashboard" icon="fas fa-gauge">Dashboard</SideBarItem>
         <SideBarItem to="/courses" icon="fas fa-book">Courses</SideBarItem>
-        <SideBarItem to="/tasks" icon="fas fa-list-check">Tasks</SideBarItem>
-        <SideBarItem to="/calendar" icon="fa-regular fa-calendar">Calendar</SideBarItem>
+        <SideBarItem to="/planning" icon="fa-regular fa-calendar">Planning</SideBarItem>
 
         <span class="collapse-icon" :class="{ 'rotate-180': collapsed }" @click="toggleSideBar">
             <i class="fas fa-angle-double-left"/>

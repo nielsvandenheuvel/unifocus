@@ -1,5 +1,5 @@
 <template>
-    <router-link :to="to" class="link" :class="{ 'active': route.path == to }">
+    <router-link :to="to" class="link" :class="{ 'active': route.path.includes(to) }">
         <i class="icon" :class="icon"/>
         <transition name="fade">
             <span v-if="!collapsed">
@@ -18,7 +18,7 @@
             to: { type: String, required: true},
             icon: { type: String, required: true},
         },
-        setup(props) {
+        setup() {
             const route = useRoute()
             return { collapsed, route }
         }
