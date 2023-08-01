@@ -1,5 +1,6 @@
 <template>
-    <div class="wrapper" :style="{ 'top': (boxTop+0.1).toString() + '%', 'height': boxHeight.toString() + '%' }">
+    <div class="wrapper"
+    :style="{ 'height': boxHeight.toString() + 'vh' }">
         <div class="activity" :style="{ 'border': '3px solid' + (this.passed ? '#D3D3D3' : category.color) }">
             <h6 class="title" :style="{ 'color': (this.passed ? '#D3D3D3' : category.color) }">{{ data.name }}</h6>
             <p class="description" :style="{ 'color': (this.passed ? '#D3D3D3' : '#000000')}">{{ data.description }}</p>
@@ -13,7 +14,6 @@
     export default {
         props: {
             data: { type: Object, required: true },
-            boxTop: { type: Number, required: true },
             boxHeight: { type: Number, required: true },
         },
         setup(props) {
@@ -49,6 +49,8 @@
 
     font-size: 14px;
     text-align: left;
+
+    z-index: 9;
 }
 .activity {
     height: 100%;

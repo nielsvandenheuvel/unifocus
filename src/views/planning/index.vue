@@ -56,7 +56,6 @@
 .body {
     background-color: white;
     position: absolute;
-    padding-right: 3em;
 }
 .calendar {
     position: relative;
